@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youth Sports Media Landing Page</title>
   
-  <!-- Google Fonts (optional for style) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -22,10 +22,16 @@
       color: white;
       text-align: center;
       padding: 60px 20px;
+
+      /* Flexbox centering */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical centering */
+      align-items: center;     /* horizontal centering */
     }
 
-    .hero img {
-      max-width: 200px; /* adjust logo size */
+    .hero-logo {
+      max-width: 200px; /* adjust size */
       margin-bottom: 20px;
     }
 
@@ -145,8 +151,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <!-- Logo image -->
-    <img src="https://github.com/MasterHeman81/EZM-Landing-Page/blob/main/EZM-Logo.png?raw=true" 
-         alt="Youth Sports Media Logo">
+    <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/EZM-Logo.png" 
+         alt="Youth Sports Media Logo" 
+         class="hero-logo">
 
     <h1>Support Youth Sports Media!</h1>
     <p>Helping athletes shine and bringing games to your screen</p>
@@ -191,5 +198,3 @@
 
 </body>
 </html>
-
-
