@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youth Sports Media Landing Page</title>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
@@ -20,24 +20,23 @@
     .hero {
       background-color: #0055a5;
       color: white;
-      text-align: center;
-      padding: 60px 20px;
-
-      /* Flexbox centering */
       display: flex;
       flex-direction: column;
-      justify-content: center; /* vertical centering */
-      align-items: center;     /* horizontal centering */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
     }
 
     .hero-logo {
-      max-width: 200px; /* adjust size */
+      max-width: 250px;
+      height: auto;
       margin-bottom: 20px;
     }
 
     .hero h1 {
-      margin: 0;
       font-size: 2.5em;
+      margin: 0;
     }
 
     .hero p {
@@ -45,7 +44,7 @@
       margin-top: 10px;
     }
 
-    /* Sponsor Section */
+    /* Sponsors Section */
     .sponsors {
       padding: 40px 20px;
       text-align: center;
@@ -76,8 +75,8 @@
     /* About Section */
     .about {
       padding: 40px 20px;
-      background-color: #eaeaea;
       text-align: center;
+      background-color: #eaeaea;
     }
 
     .about h2 {
@@ -91,7 +90,7 @@
       line-height: 1.5;
     }
 
-    /* QR Code / Donations Section */
+    /* QR Code / Donate Section */
     .donate {
       padding: 40px 20px;
       text-align: center;
@@ -136,12 +135,12 @@
     }
 
     @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
       .sponsor-logos img {
         max-width: 100px;
         max-height: 60px;
-      }
-      .hero h1 {
-        font-size: 2em;
       }
     }
   </style>
@@ -150,11 +149,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <!-- Logo image -->
     <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/EZM-Logo.png" 
-         alt="Youth Sports Media Logo" 
-         class="hero-logo">
-
+         alt="Youth Sports Media Logo" class="hero-logo">
     <h1>Support Youth Sports Media!</h1>
     <p>Helping athletes shine and bringing games to your screen</p>
   </section>
@@ -163,7 +159,7 @@
   <section class="sponsors">
     <h2>Our Sponsors</h2>
     <div class="sponsor-logos">
-      <!-- Replace these with your uploaded images -->
+      <!-- Replace these URLs with your sponsor logo raw links -->
       <img src="https://github.com/YourUsername/RepoName/blob/main/Logo1.png?raw=true" alt="Sponsor 1">
       <img src="https://github.com/YourUsername/RepoName/blob/main/Logo2.png?raw=true" alt="Sponsor 2">
       <img src="https://github.com/YourUsername/RepoName/blob/main/Logo3.png?raw=true" alt="Sponsor 3">
@@ -171,17 +167,16 @@
     </div>
   </section>
 
-  <!-- About / Mission Section -->
+  <!-- About Section -->
   <section class="about">
     <h2>About Us</h2>
     <p>We are dedicated to covering youth sports and helping athletes showcase their talents. Our nonprofit livestreams games, creates highlight reels, and provides media production training to youth in our community.</p>
   </section>
 
-  <!-- QR Code / Donations Section -->
+  <!-- QR Code / Donate Section -->
   <section class="donate">
     <h2>Donate to Support Us</h2>
     <p>Scan the QR code below to donate — your contribution is tax-deductible!</p>
-    <!-- Replace src with your actual QR code image later -->
     <img src="https://via.placeholder.com/200?text=QR+Code" alt="Donate QR Code">
   </section>
 
