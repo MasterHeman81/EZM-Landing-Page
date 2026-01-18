@@ -18,14 +18,23 @@
 
     /* Hero Section */
     .hero {
-      background-color: #0055a5;
-      color: white;
+      position: relative;
+      height: 80vh; /* Full-screen height */
+      background-image: url('your-photo.jpg'); /* Replace with your background photo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: white;
+    }
+
+    .hero-overlay {
       text-align: center;
-      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+      padding: 30px 20px;
+      border-radius: 10px;
     }
 
     .hero-logo {
@@ -86,7 +95,7 @@
 
     .about p {
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
       line-height: 1.5;
     }
 
@@ -147,41 +156,39 @@
 </head>
 <body>
 
-<section class="hero">
-    <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/Elite%20Zone%20Logo%204.png
-" 
-         alt="Youth Sports Media Logo" 
-         class="hero-logo"
-         style="max-width:250px; margin-bottom:20px; display:block; margin-left:auto; margin-right:auto;">
-    <h1>Support Elite Zone Media!</h1>
-    <p>Where Future Champions Shine!</p>
-</section>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/Elite%20Zone%20Logo%204.png" 
+           alt="Youth Sports Media Logo" 
+           class="hero-logo">
+      <h1>Support Elite Zone Media!</h1>
+      <p>Where Future Champions Shine!</p>
+    </div>
+  </section>
 
   <!-- Sponsors Section -->
   <section class="sponsors">
     <h2>Our Sponsors</h2>
     <div class="sponsor-logos">
       <!-- Replace these URLs with your sponsor logo raw links -->
-<img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/Jet%20Training%20Logo.jpg?raw=true" alt="Sponsor 1">
-<img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/TroubledPinz%20Logo%204.png" alt="Sponsor 2">
-<img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/520%20ST%20Logo%204.png" alt="Sponsor 3">
-<img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/CoolFM%20Logo.JPG?raw=true" alt="Sponsor 4">
-
+      <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/Jet%20Training%20Logo.jpg?raw=true" alt="Sponsor 1">
+      <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/TroubledPinz%20Logo%204.png" alt="Sponsor 2">
+      <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/520%20ST%20Logo%204.png" alt="Sponsor 3">
+      <img src="https://github.com/MasterHeman81/EZM-Landing-Page/raw/main/CoolFM%20Logo.JPG?raw=true" alt="Sponsor 4">
     </div>
   </section>
 
   <!-- About Section -->
   <section class="about"> 
-  <h2>About Us</h2>
+    <h2>About Us</h2>
 
-  <p>At Elite Zone Media, we’re passionate about showcasing the talent, dedication, and achievements of young athletes. Founded by Ray Tapia, a Tucson-based media professional with years of experience in sports production and livestreaming, our mission is to create high-quality highlight reels, livestreams, and podcasts that put athletes in the spotlight they deserve.</p>
+    <p>At Elite Zone Media, we’re passionate about showcasing the talent, dedication, and achievements of young athletes. Founded by Ray Tapia, a Tucson-based media professional with years of experience in sports production and livestreaming, our mission is to create high-quality highlight reels, livestreams, and podcasts that put athletes in the spotlight they deserve.</p>
 
-  <p>We specialize in youth and high school sports coverage, delivering content that captures the excitement of the game while providing athletes with a professional platform to share their skills. From dynamic highlight reels with player stats to immersive livestreams and engaging podcasts, our goal is to help athletes, teams, and communities celebrate sports in a meaningful way.</p>
+    <p>We specialize in youth and high school sports coverage, delivering content that captures the excitement of the game while providing athletes with a professional platform to share their skills. From dynamic highlight reels with player stats to immersive livestreams and engaging podcasts, our goal is to help athletes, teams, and communities celebrate sports in a meaningful way.</p>
 
-  <p>At Elite Zone Media, we believe every athlete has a story worth telling — and we’re here to make sure it’s seen. Whether it’s capturing unforgettable moments on the field, producing content for recruitment opportunities, or training the next generation in media production, we’re committed to quality, creativity, and community.</p>
-</section>
-
+    <p>At Elite Zone Media, we believe every athlete has a story worth telling — and we’re here to make sure it’s seen. Whether it’s capturing unforgettable moments on the field, producing content for recruitment opportunities, or training the next generation in media production, we’re committed to quality, creativity, and community.</p>
+  </section>
 
   <!-- QR Code / Donate Section -->
   <section class="donate">
